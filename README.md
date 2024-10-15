@@ -1,6 +1,6 @@
 # quran
 
-A new Flutter project.
+a quran app that you can read or listen to the moshaf and read azkar or daily duaa also you can sebha that count your daily tasbeh.
 
 ## Getting Started
 
