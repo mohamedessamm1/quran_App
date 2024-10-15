@@ -37,7 +37,13 @@ class _TasbehScreenState extends State<TasbehScreen> {
               Column(
                 children: [
                   70.ph,
-                  dailyTasbehWidget(),
+                  Row(
+                    children: [
+                      resetButtonWidget(),
+                      Spacer(),
+                      dailyTasbehWidget(),
+                    ],
+                  ),
                   70.ph,
                   Text(
                     '${azkar[Random().nextInt(5)]}',
@@ -58,13 +64,13 @@ class _TasbehScreenState extends State<TasbehScreen> {
                     ),
                   ),
                   counterWidget(),
-                  80.ph,
-                  Expanded(
-                    child: Row(
-                      children: [addOneButtonWidget(), resetButtonWidget()],
-                    ),
+                  20.ph,
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      addOneButtonWidget(),
+                    ],
                   ),
-                  const Expanded(child: SizedBox()),
                 ],
               )
             ],

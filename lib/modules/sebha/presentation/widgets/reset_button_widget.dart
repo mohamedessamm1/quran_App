@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:quran/modules/sebha/presentation/manager/sebha_contoller.dart';
 
@@ -7,13 +8,13 @@ Widget resetButtonWidget() {
       init: SebhaController(),
       builder: (_) => Expanded(
             child: IconButton(
-                iconSize: 70,
+                iconSize: 40.w,
                 onPressed: () {
                   _.reset();
                 },
                 icon: const Icon(
                   Icons.refresh_rounded,
-                  color: Colors.grey,
+                  color: Colors.white,
                 )),
           ));
 }

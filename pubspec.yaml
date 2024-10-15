@@ -38,6 +38,7 @@ dependencies:
   permission_handler: ^11.3.1
   audioplayers:
   intl:
+  ripple_wave: ^0.1.4
 
   get: ^4.6.6
   just_audio: ^0.9.40
